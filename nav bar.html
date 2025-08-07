@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Navbar Task</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: rgb(217, 226, 235);
+      font-family:Arial, Helvetica, sans-serif;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: rgb(0, 0, 0);
+      padding: 12px 40px;
+      color: white;
+      margin: 30px auto;
+      max-width: 1000px;
+      border-radius: 5px;
+    }
+
+    .nav-left,
+    .nav-center,
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 16px;
+      letter-spacing: 1px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 14px;
+     
+    }
+    .nav-links a:hover{
+        color: pink;
+    }
+
+   
+    .contact-button {
+      background-color: #59b4d3;
+      color: white;
+      padding: 5px 15px;
+      border-radius: 30px;
+      font-size: 14px;
+      font-weight:bold;
+      text-decoration: none;
+     
+    }
+
+    .contact-button:hover {
+      background-color: #b80003;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navbar (Logo Left, Contact Right) -->
+  <div class="navbar">
+    <div class="nav-left logo">LOGOBAKERY</div>
+    <div class="nav-center nav-links">
+      <a href="#">Services</a>
+      <a href="#">Projects</a>
+      <a href="#">About</a>
+    </div>
+    <a href="#" class="contact-button">Contact</a>
+  </div>
+
+  <!-- Middle Navbar (Logo Right, Contact Left) -->
+  <div class="navbar">
+    <div class="nav-left nav-links">
+      <a href="#">Services</a>
+      <a href="#">Projects</a>
+      <a href="#">About</a>
+      <a href="#" class="contact-button">Contact</a>
+    </div>
+    <div class="nav-right logo">LOGOBAKERY</div>
+  </div>
+
+  <!-- Bottom Navbar (Logo Left, Links Right, Contact Far Right) -->
+  <div class="navbar">
+    <div class="nav-left logo">LOGOBAKERY</div>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="#">Services</a>
+        <a href="#">Projects</a>
+        <a href="#">About</a>
+      </div>
+      <a href="#" class="contact-button">Contact</a>
+    </div>
+  </div>
+
+</body>
+</html>
